@@ -1,0 +1,6 @@
+{
+    "output": {
+        "folder": "./captured",
+        "prefix": "captured_"
+    }
+}
