@@ -1,10 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import Adafruit_DHT
 import requests
 import json
+import os
 
-with open('pi-camera.json') as json_file:
+cwd = os.path.dirname(os.path.realpath(__file__))
+
+with open('{0}/pi-camera.json'.format(cwd)) as json_file:
     j = json.load(json_file)
 
 url = j['repository']['url']
